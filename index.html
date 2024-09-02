@@ -19,25 +19,28 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/framework12col.css">
     </head>
-    <body>
+    <body class="bg-primary">
+        <div id="app">
+            <!-- header -->
+            <header>
+                <h1 class="text-center py-3 text-white">Generatore di email tramite Boolean API</h1>          
+            </header>
+            <!-- /header -->
 
-        <!-- header -->
-        <header>
-                HEADER
-        </header>
-        <!-- /header -->
+            <!-- main -->
+            <main>
+                <h2 class="text-center py-3 text-white">Email generate:</h2>
+                <div class="m-auto" id="listContainer">
+                    <ol class="text-center py-3 text-white fs-3">
+                        <li v-for="(email, i) in emailList">
+                            {{ email }}
+                        </li>
+                    </ol>
+                </div>
+            </main>
+            <!-- /main -->
 
-        <!-- main -->
-        <main>
-                MAIN
-        </main>
-        <!-- /main -->
-
-        <!-- footer -->
-        <footer>      
-                FOOTER     
-        </footer>
-        <!-- /footer -->
+        </div>
 
         <!-- JS -->
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
